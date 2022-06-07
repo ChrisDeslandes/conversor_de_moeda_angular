@@ -24,7 +24,7 @@ export class AppComponent {
   }
 
   ngOnInit() {
-    const url = 'https://api.hgbrasil.com/finance?key=e33a1dfe&format=json-cors';
+    const url = 'https://api.hgbrasil.com/finance?key=89c337ab&format=json-cors';
     this.http.get<any>(url).subscribe(data => {
       if (data) {
         this.cotacaoDolar = data.results.currencies.USD.buy
